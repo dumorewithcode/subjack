@@ -5,14 +5,14 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/haccer/subjack/subjack"
+	"github.com/jmsct/subjack/subjack"
 )
 
 func main() {
 	GOPATH := os.Getenv("GOPATH")
-	Project := "/src/github.com/haccer/subjack/"
+	Project := "/src/github.com/jmsct/subjack/"
 	configFile := "fingerprints.json"
-	defaultConfig := GOPATH + Project + configFile
+	defaultConfig := GOPATH + Project + "blob/master/" +configFile
 
 	o := subjack.Options{}
 
